@@ -1,5 +1,4 @@
 import React from 'react';
-// import {number} from 'prop-types'
 
 const CommentDetail = ({avatarImage, author, timeAgo, comment}) => (
         <div className="comment">
