@@ -12,22 +12,27 @@ const App = () => {
     // Puedes usar tambien debugger;
     return (
         <div className="ui container comments">
-            <AppovalCard/>
-            <CommentDetail 
-                avatarImage={Faker.image.avatar()} 
-                author={Faker.name.firstName()} 
-                timeAgo={mySuperDateFunction(Faker.date)} 
-                comment={Faker.hacker.phrase()}/>
-            <CommentDetail 
-                avatarImage={Faker.image.avatar()} 
-                author={Faker.name.firstName()}
-                timeAgo={mySuperDateFunction(Faker.date)} 
-                comment={Faker.hacker.phrase()}/>
-            <CommentDetail 
-                avatarImage={Faker.image.avatar()} 
-                author={Faker.name.firstName()} 
-                timeAgo={mySuperDateFunction(Faker.date)} 
-                comment={Faker.hacker.phrase()}/>
+            <AppovalCard>
+                <CommentDetail 
+                    avatarImage={Faker.image.avatar()} 
+                    author={Faker.name.firstName()} 
+                    timeAgo={mySuperDateFunction(Faker.date)} 
+                    comment={Faker.hacker.phrase()}/>
+            </AppovalCard>
+            <AppovalCard>
+                <CommentDetail 
+                    avatarImage={Faker.image.avatar()} 
+                    author={Faker.name.firstName()} 
+                    timeAgo={mySuperDateFunction(Faker.date)} 
+                    comment={Faker.hacker.phrase()}/>
+            </AppovalCard>
+            <AppovalCard>
+                <CommentDetail 
+                    avatarImage={Faker.image.avatar()} 
+                    author={Faker.name.firstName()} 
+                    timeAgo={mySuperDateFunction(Faker.date)} 
+                    comment={Faker.hacker.phrase()}/>
+            </AppovalCard>
         </div>
     );
 };
