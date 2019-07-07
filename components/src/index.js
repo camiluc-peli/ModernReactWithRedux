@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Faker from 'faker';
 import CommentDetail from  './CommentDetail';
-
+import AppovalCard from './ApprovalCard';
 
 const mySuperDateFunction = myDate => (`${myDate.past()}`);
 
@@ -12,6 +12,7 @@ const App = () => {
     // Puedes usar tambien debugger;
     return (
         <div className="ui container comments">
+            <AppovalCard/>
             <CommentDetail 
                 avatarImage={Faker.image.avatar()} 
                 author={Faker.name.firstName()} 
