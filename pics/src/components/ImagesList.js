@@ -1,3 +1,4 @@
+import './ImagesList.css';
 import React from 'react';
 
 const ImageList = (props) => {
@@ -8,7 +9,7 @@ const ImageList = (props) => {
 
 
     return (
-        <div>
+        <div className="image-list">
             {images}
         </div>
     );
